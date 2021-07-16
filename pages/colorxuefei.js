@@ -6,7 +6,6 @@ export default async function handler(req, res) {
     const data = await db.collection("colors").find().toArray();
     res.json(data);
 }
-/************************** */
 /*export default function Colors({ colors }) {
   return (
     <div>
